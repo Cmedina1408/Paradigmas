@@ -14,13 +14,34 @@ import java.util.*;
  */
 public class Mascota {
     
+	
+	// Definicion de variables segun diagrama de clases Uml
+	
     private int numregistroMas;
     private String nombreMas;
     private int edadMas;
     private String GeneroMas;
     private Date fechanaciMas;
     private String especie;
+	private  ArrayList<String> nombreDueno = new ArrayList<String>(); //Array para guardar los nombres de los dueños
+   	private  ArrayList<Date> fechaTrasp = new ArrayList<Date>(); //Array para guardar la fecha de los traspasos
 
+    public Mascota(int numregistroMas, 
+    		String nombreMas, 
+    		int edadMas, 
+    		String GeneroMas, 
+    		Date fechanaciMas, 
+    		String especie) {
+        this.numregistroMas = numregistroMas;
+        this.nombreMas = nombreMas;
+        this.edadMas = edadMas;
+        this.GeneroMas = GeneroMas;
+        this.fechanaciMas = fechanaciMas;
+        this.especie = especie;
+    }
+    
+    
+       
     public int getNumregistroMas() {
         return numregistroMas;
     }
@@ -68,15 +89,27 @@ public class Mascota {
     public void setEspecie(String especie) {
         this.especie = especie;
     }
+    
+   
+    /**
+     * Guarda el registro del dueño y la fecha en la cual se realizo el traspaso
+     * @author WILSON GUTIERREZ LANCHEROS
+     * @param nm nombre del dueño de la mascota
+     */
+  
+     public void guardarDuenoMascota (String nm)  {   	   
+	   nombreDueno.add(nm);   	     	   	   
+   } 
 
-    public Mascota(int numregistroMas, String nombreMas, int edadMas, String GeneroMas, Date fechanaciMas, String especie) {
-        this.numregistroMas = numregistroMas;
-        this.nombreMas = nombreMas;
-        this.edadMas = edadMas;
-        this.GeneroMas = GeneroMas;
-        this.fechanaciMas = fechanaciMas;
-        this.especie = especie;
-    }
+   /**
+    * Guarda el registro de la fecha en la cual se realizo el traspaso
+    * @author WILSON GUTIERREZ LANCHEROS 
+    * @param fechaT fecha de traspaso
+    */
+  
+    public void guardarFechaT (Date fechaT)  {   	   
+	  fechaTrasp.add(fechaT);   	     	   	   
+  } 
 
     @Override
     public String toString() {
@@ -84,4 +117,3 @@ public class Mascota {
     }
         
 }
-

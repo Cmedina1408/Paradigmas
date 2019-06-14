@@ -20,7 +20,8 @@ public class Dueño {
     private String DireccionClien;
     private int telefonoClient;
     private Date fechapasoClien;
-
+        
+    
     public int getIdClien() {
         return idClien;
     }
@@ -69,20 +70,24 @@ public class Dueño {
         this.fechapasoClien = fechapasoClien;
     }
 
-    public Dueño(int idClien, String nombreClien, String apellidoClien, String DireccionClien, int telefonoClient, Date fechapasoClien) {
+    public Dueño(int idClien, 
+    		String nombreClien, 
+    		String apellidoClien, 
+    		String DireccionClien, 
+    		int telefonoClient, 
+    		Date fecha) {
         this.idClien = idClien;
         this.nombreClien = nombreClien;
         this.apellidoClien = apellidoClien;
         this.DireccionClien = DireccionClien;
         this.telefonoClient = telefonoClient;
-        this.fechapasoClien = fechapasoClien;
+        this.fechapasoClien = fecha;
     }
 
     @Override
     public String toString() {
         return "Due\u00f1o{" + "idClien=" + idClien + ", nombreClien=" + nombreClien + ", apellidoClien=" + apellidoClien + ", DireccionClien=" + DireccionClien + ", telefonoClient=" + telefonoClient + ", fechapasoClien=" + fechapasoClien + '}';
     }
-    
-    
 }
-
+    
+    
