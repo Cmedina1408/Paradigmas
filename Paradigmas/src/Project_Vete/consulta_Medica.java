@@ -60,7 +60,7 @@ public class consulta_Medica {
 	public String toString() {
 		return "id : " + id_consulta + " fecha : " + sdf.format(Fecha_Actual) + "\n" +
 				"El motivo fue : " + Motivo + "\nEl examen fisico es : " + Examen_fisico +
-				"\nEl tratamiento es : " + Tratamiento; 
+				"\nEl tratamiento es : " + Tratamiento ; 
 	}
 
 	public static void main(String[] args) {
