@@ -9,9 +9,9 @@ package Project_Vete;
 import java.util.*;
 
 /**
- *
- * @author Paradigmas
- */
+*Esta clase define objetos Mascota con gets,Set y Contructor  correspondientes
+* @author Jhon H Riaño
+*/
 public class Mascota {
     
 	

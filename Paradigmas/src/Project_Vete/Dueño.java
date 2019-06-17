@@ -10,9 +10,9 @@ package Project_Vete;
 import java.util.*;
 
 /**
- *
- * @author Paradigmas
- */
+*Esta clase define objetos Dueños con gets,Set y Contructor  correspondientes
+* @author Jhon H Riaño
+*/
 public class Dueño {
     private int idClien;
     private String nombreClien;

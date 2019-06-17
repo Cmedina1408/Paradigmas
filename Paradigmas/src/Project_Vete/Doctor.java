@@ -1,15 +1,11 @@
 package Project_Vete;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
+ 
 /**
- *
- * @author Paradigmas
- */
+*Esta clase define objetos Doctor con gets,Set y Contructor  correspondientes
+* @author Jhon H Riaño
+*/
 public class Doctor {
     private int idDoctor;
     private String nombreDoctor;
