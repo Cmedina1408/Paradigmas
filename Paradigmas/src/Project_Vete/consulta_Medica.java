@@ -8,67 +8,73 @@ import java.util.*;
  */
 
 
-public class consulta_Medica {
-
-	private int id_consulta = 0 ;
+public class consulta_Medica{
+	
+	public int id_consulta [];
 	public Date Fecha_Actual= new Date();
 	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	public String Enfermedad = "";
 	public String Motivo = "";
 	public String Examen_fisico = "";
 	public String Tratamiento = "";
+	
+	
 
-
-	consulta_Medica(int id_consulta , String Motivo , String
-			Examen_fisico , String Tratmiento)
+	consulta_Medica(String Motivo , String Examen_fisico , String Enfermedad , String Tratmiento )
 	{
-
-		this.id_consulta = id_consulta;
 		this.Motivo = Motivo;
 		this.Examen_fisico = Examen_fisico;
 		this.Tratamiento = Tratmiento;
-
+		this.Enfermedad = Enfermedad;
 	}
-	/*
-	 *@author Damanchola
-	 *Permite obtener los datos el motivo de la consulta   
-	 */
-	public String Obtener_Motivo() 
+	
+	public int Aumentar_id(int id) {
+		
+		for (int i = 0; i < this.id_consulta.length; i++) {
+			if(id_consulta[i] == 0) {
+				id_consulta[i]= id;
+				break;
+			}
+		}
+		return id;
+	}
+	
+	public String get_Motivo() 
 	{
 		return "El motivo de esta consulta fue : " + Motivo;
 	}
-	public void Modificar_Motivo(String Modificar) 
+	public void set_Motivo(String Modificar) 
 	{
 		Motivo = Modificar;
 	}
-	public String Obtener_Examen_Fisico ()
+	public String get_Examen_Fisico ()
 	{
 		return "El examen fisico es : " + Examen_fisico;
 	}
 
-	public void Modificar_Examen_Fisico(String Modificar) 
+	public void set_Examen_Fisico(String Modificar) 
 	{
 		Examen_fisico = Modificar;
 	}
-	public String Obtener_Tratamiento () 
+	
+	public String get_Enfermedad () 
+	{
+		return "La enfermedad del animal es : " +  Enfermedad;
+	}
+	public void set_Enfermedad (String Modificar) {
+		Enfermedad = Modificar;
+	}
+	public String get_Tratamiento () 
 	{
 		return "El tratamiento del animal es " +  Tratamiento;
 	}
-	public void Modificar_Tratamiento (String Modificar) {
+	public void set_Tratamiento (String Modificar) {
 		Tratamiento = Modificar;
 	}
 
 	public String toString() {
 		return "id : " + id_consulta + " fecha : " + sdf.format(Fecha_Actual) + "\n" +
-				"El motivo fue : " + Motivo + "\nEl examen fisico es : " + Examen_fisico +
-				"\nEl tratamiento es : " + Tratamiento ; 
-	}
-
-	public static void main(String[] args) {
-		consulta_Medica Animal1 = new consulta_Medica(0, "enfermedad", "a", "c");
-		
-		System.out.println(Animal1.toString());
-		
-	}
-	
-	
+				"El motivo fue : " + Motivo + "\nEl examen fisico es : " + Examen_fisico + 
+				"\nLa Enfermedad es : " + Enfermedad + "\nEl tratamiento es : " + Tratamiento ; 
+	}	
 }
