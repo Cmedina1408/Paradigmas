@@ -1,18 +1,10 @@
 package Project_Vete;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 
 import java.util.*;
 
-/**
-*Esta clase define objetos Persona con gets,Set y Contructor  correspondientes
-* @author Jhon H Riaño
-*/
+
 public class Persona {
     private int idPerson;
     private String nombrePerson;
@@ -74,7 +66,7 @@ public class Persona {
     
     }
 
-    @Override
+ 
     public String toString() {
         return "Informacion" + "\nid=" + idPerson + "\nnombre=" + nombrePerson + "\tapellido=" + apellidoPerson + "\nDireccion=" + DireccionPerson + "\ttelefono=" + telefonoPerson;
     }

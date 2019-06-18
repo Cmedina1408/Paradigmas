@@ -81,7 +81,7 @@ public class Doctor {
         this.especialidadDoctor = especialidadDoctor;
     }
 
-    @Override
+  
     public String toString() {
         return "Doctor{" + "idDoctor=" + idDoctor + ", nombreDoctor=" + nombreDoctor + ", apellidoDoctor=" + apellidoDoctor + ", direccionDoctor=" + direccionDoctor + ", telefonoDoctor=" + telefonoDoctor + ", profesionDoctor=" + profesionDoctor + ", especialidadDoctor=" + especialidadDoctor + '}';
     }

@@ -108,7 +108,7 @@ public class Mascota {
 	  fechaTrasp.add(fechaT);   	     	   	   
   } 
 
-    @Override
+    
     public String toString() {
         return "Mascota{" + "numregistroMas=" + numregistroMas + ", nombreMas=" + nombreMas + ", edadMas=" + edadMas + ", GeneroMas=" + GeneroMas + ", fechanaciMas=" + fechanaciMas + ", especie=" + especie + '}';
     }
