@@ -2,26 +2,26 @@ package Project_Vete;
 
 public class Veterinaria {
 
-// Definicion de arreglos @Jhon Riaño
-        Dueño[] dueño;
+	// Definicion de arreglos @Jhon Riaño
+	Dueño[] dueño;
 	Mascota[] mascota;
-        Doctor[] doctor;
-        
+	Doctor[] doctor;
+
 	//Constructor @Jhon Riaño
 	public Veterinaria(int cantdueños)
 	{
 		dueño=new Dueño[cantdueños];
-                	
-	}
-     //Constructor@Jhon Riaño
-    public Veterinaria(Mascota[] mascota) {
-        this.mascota = mascota;
-    }
 
-    public Veterinaria(Doctor[] doctor) {
-        this.doctor = doctor;
-    }
- 
+	}
+	//Constructor@Jhon Riaño
+	public Veterinaria(Mascota[] mascota) {
+		this.mascota = mascota;
+	}
+
+	public Veterinaria(Doctor[] doctor) {
+		this.doctor = doctor;
+	}
+
 	//Creacion Dueño @Jhon Riaño
 	public void Creardueño(Dueño c)
 	{
@@ -40,14 +40,16 @@ public class Veterinaria {
 			}
 		}
 	}
-        //Crear Veterinario @Jhon Riaño
-        public void Crearveterinario(Doctor v)
-        {
-            for(int i=0;i<doctor.length;i++) {
+	//Crear Veterinario @Jhon Riaño
+	public void Crearveterinario(Doctor v)
+	{
+		for(int i=0;i<doctor.length;i++) {
 			if(doctor[i]==null) {
 				doctor[i]=v;
 			}
-            }
-        }
-        
+		}
+	}
+
 }
+
+

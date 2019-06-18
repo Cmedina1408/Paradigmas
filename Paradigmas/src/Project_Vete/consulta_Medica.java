@@ -4,13 +4,13 @@ import java.util.*;
 
 /*
  * Esta clase me permite generar una consulta para el animal
- * @author Jhon H Roaño
+ * @author Paradigmas
  */
 
 
 public class consulta_Medica{
 	
-	public int id_consulta [];
+	public int id_consulta;
 	public Date Fecha_Actual= new Date();
 	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	public String Enfermedad = "";
@@ -26,17 +26,6 @@ public class consulta_Medica{
 		this.Examen_fisico = Examen_fisico;
 		this.Tratamiento = Tratmiento;
 		this.Enfermedad = Enfermedad;
-	}
-	
-	public int Aumentar_id(int id) {
-		
-		for (int i = 0; i < this.id_consulta.length; i++) {
-			if(id_consulta[i] == 0) {
-				id_consulta[i]= id;
-				break;
-			}
-		}
-		return id;
 	}
 	
 	public String get_Motivo() 

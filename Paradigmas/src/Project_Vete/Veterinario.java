@@ -1,51 +1,38 @@
 package Project_Vete;
 
 
-
-public class Veterinario {
-
-	public int idVete;
-	public String nombreVete;
-	public String profesion;
-	public String direccion;
-	public long telefono;
-
-
-	public int getIdVete() {
-		return idVete;
+public class Veterinario extends Persona{
+	
+	private String Profesion;
+	private String Especializacion;
+	
+	public Veterinario(int idPerson, String nombrePerson, String apellidoPerson, String DireccionPerson,
+			int telefonoPerson , String Profesion , String Especializacion) {
+		super(idPerson, nombrePerson, apellidoPerson, DireccionPerson, telefonoPerson);
+		
+		this.Profesion = Profesion;
+		this.Especializacion = Especializacion;
+		
 	}
 
-	public void setIdVete(int idVete) {
-		this.idVete = idVete;
+	public String get_Profesion() {
+		return "Profesion: " + Profesion;
 	}
-
-	public String getNombreVete() {
-		return nombreVete;
+	public void set_Profesion(String Profesion) {
+		this.Profesion = Profesion;
 	}
-
-	public void setNombreVete(String nombreVete) {
-		this.nombreVete = nombreVete;
+	
+	public String get_Especializacion() {
+		return "Especializacion: " + Especializacion;
 	}
-
-	@Override
+	
+	public void set_Especializacion(String Especializacion) {
+		this.Especializacion = Especializacion;
+	}
+	
 	public String toString() {
-		return "Empleado " + idVete + " " + nombreVete + " " + profesion + " " + 
-				" " + direccion + " " + telefono ;
+		return super.toString() + "\tProfesion : " + Profesion + "\tEspecializacion : " + Especializacion;
 	}
-
-	public Veterinario(int idVete, String nombreVete, String profesion
-			, String direccion , long telefono ) {
-		this.idVete = idVete;
-		this.nombreVete = nombreVete;
-		this.profesion = profesion;
-		this.direccion = direccion;
-		this.telefono = telefono;
-	}
-
-
-	public static void main(String[] args) {
-
-	}
-
+	
 }
 
