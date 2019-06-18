@@ -4,7 +4,7 @@ import java.util.*;
 
 /*
  * Esta clase me permite generar una consulta para el animal
- * @author Paradigmas
+ * @author Jhon H Riaño
  */
 
 

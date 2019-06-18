@@ -1,10 +1,5 @@
 package Project_Vete;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 import java.util.*;
 
@@ -14,8 +9,10 @@ import java.util.*;
 */
 public class Mascota {
     
-	
-	// Definicion de variables segun diagrama de clases Uml
+	/**
+	*Esta clase define objetos Definicion de variables segun diagrama de clases Uml correspondientes
+	* @author Jhon H Riaño
+	*/
 	
     private int numregistroMas;
     private String nombreMas;
