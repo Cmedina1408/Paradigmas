@@ -39,6 +39,10 @@ public class Raza {
 	public Raza() {		
 		nombreRaza = "";
 	}
+	public static void add(Raza raza) {
+
+		
+	}
 			
 	
 }

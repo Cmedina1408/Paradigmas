@@ -28,7 +28,11 @@ public class Dueno implements Serializable{
 	this.correo=CORREO;
 	}
 
-	    public Date getRegistro() {
+	    public Dueno(int idCl, String nmCl, String apCl, String dirCl, int telCl, Date fecha) {
+		
+	}
+
+		public Date getRegistro() {
 	        return registro;
 	    }
 
@@ -54,5 +58,9 @@ public class Dueno implements Serializable{
 
 	    public String getNom()         {return nom;}
 	    public void setNom(String nom) {this.nom = nom;}
+
+		public static  void add(Dueno dueno) {
+			
+		}
 
 }

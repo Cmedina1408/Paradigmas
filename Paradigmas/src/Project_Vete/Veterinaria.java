@@ -1,16 +1,20 @@
 package Project_Vete;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 public class Veterinaria {
 
 	// Definicion de arreglos @Jhon Riaño	
-		Dueño[] dueño;
+		Dueno[] dueno;
 		Mascota[] mascota;
-		Doctor[] doctor;
+		Veterinario[] Veterinario1;
 		
 		//Definición de listas @Wilson Gutierrez
 		ArrayList<Especie> esp = new ArrayList<Especie>();
 		ArrayList<Raza> laraza = new ArrayList<Raza>();
-		ArrayList<Dueño> eldueno = new ArrayList<Dueño>();
+		ArrayList<Dueno> eldueno = new ArrayList<Dueno>();
+		private Veterinario[] Veterinario;
 
 		//Constructor @Jhon Riaño
 		/**
@@ -19,7 +23,7 @@ public class Veterinaria {
 		 */
 		public Veterinaria(int cantdueños)
 		{
-			dueño=new Dueño[cantdueños];
+			dueno = new Dueno[cantdueños];
 
 		}
 		//Constructor@Jhon Riaño
@@ -35,8 +39,8 @@ public class Veterinaria {
 		 * @author Jhon Riaño
 		 * @param doctor
 		 */
-		public Veterinaria(Doctor[] doctor) {
-			this.doctor = doctor;
+		public Veterinaria(Veterinario[] Veterinario) {
+			this.Veterinario1 = Veterinario;
 		}
 
 		//Creacion Dueño @Jhon Riaño
@@ -44,11 +48,11 @@ public class Veterinaria {
 		 * @author Jhon Riaño
 		 * @param c
 		 */
-		public void Creardueño(Dueño c)
+		public void Creardueño(Dueno c)
 		{
-			for(int i=0;i<dueño.length;i++) {
-				if(dueño[i]==null) {
-					dueño[i]=c;
+			for(int i=0;i<dueno.length;i++) {
+				if(dueno[i]==null) {
+					dueno[i]=c;
 				}
 			}
 		}
@@ -70,11 +74,11 @@ public class Veterinaria {
 		 * @author Jhon Riaño
 		 * @param v
 		 */
-		public void Crearveterinario(Doctor v)
+		public void Crearveterinario(Veterinario v)
 		{
-			for(int i=0;i<doctor.length;i++) {
-				if(doctor[i]==null) {
-					doctor[i]=v;
+			for(int i=0;i<Veterinario1.length;i++) {
+				if(Veterinario1[i]==null) {
+					Veterinario1[i]=v;
 				}
 			}
 		}
@@ -85,7 +89,7 @@ public class Veterinaria {
 		 * @param e contiene el valor de la nueva especie
 		 */
 		public void crearespecie (String e) {		
-			esp.add(new Especie(e));		
+			Especie.add(new Especie(e));		
 		}
 	/**
 	 * Metodo para guardar una nueva raza
@@ -93,7 +97,7 @@ public class Veterinaria {
 	 * @param r contiene el valor de la nueva raza
 	 */
 		public void crearraza (String r) {		
-			laraza.add(new Raza(r));		
+			Raza.add(new Raza(r));		
 		}
 		/**
 		 * Metodo para crear los datos de un dueño de mascota
@@ -111,26 +115,27 @@ public class Veterinaria {
 	    		String DirCl, 
 	    		int telCl, 
 	    		Date fecha) {		
-			eldueno.add(new Dueño(idCl, nmCl, apCl, DirCl, telCl, fecha));		
+			Dueno.add(new Dueno(idCl, nmCl, apCl, DirCl, telCl, fecha));		
 		}
 
-<<<<<<< HEAD
-	//Crear Veterinario @Jhon Riaño
-	public void Crearveterinario(Veterinario v)
-=======
-	/**
-	*Esta clase define Crear Veterinario  correspondientes
-	* @author Jhon H Riaño
-	*/
+
 	
-	public void Crearveterinario(Doctor v)
->>>>>>> branch 'master' of https://github.com/damanchola1/Paradigmas.git
+
+/**
+ * @param Metodo para crear Veterinario
+ * @author Jhon Riaño
+ 
+ */
+	
+	public void Crearveterinario1(Veterinario v)
+
 	{
-		for(int i=0;i<Veterinario.length;i++) {
-			if(Veterinario[i]==null) {
-				Veterinario[i]=v;
+		for(int i=0;i<Veterinario1.length;i++) {
+			if(Veterinario1[i]==null) {
+				Veterinario1[i]=v;
 			}
 		}
+	}
 	}
 
 

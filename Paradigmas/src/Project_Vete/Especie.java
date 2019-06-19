@@ -24,6 +24,11 @@ public class Especie {
     public Especie(String especie) {
         this.especie = especie;
     }
+
+	public static void add(Especie especie2) {
+		
+		
+	}
     
     
 }

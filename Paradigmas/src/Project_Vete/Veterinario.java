@@ -3,6 +3,7 @@ package Project_Vete;
 
 public class Veterinario extends Persona{
 	
+	public static int length;
 	private String Profesion;
 	private String Especializacion;
 	
