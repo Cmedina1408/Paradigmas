@@ -5,7 +5,7 @@ public class Veterinaria {
 	// Definicion de arreglos @Jhon Riaño
 	Dueño[] dueño;
 	Mascota[] mascota;
-	Doctor[] doctor;
+	Veterinario[] Veterinario;
 
 	//Constructor @Jhon Riaño
 	public Veterinaria(int cantdueños)
@@ -18,8 +18,8 @@ public class Veterinaria {
 		this.mascota = mascota;
 	}
 
-	public Veterinaria(Doctor[] doctor) {
-		this.doctor = doctor;
+	public Veterinaria(Veterinario[] doctor) {
+		this.Veterinario = doctor;
 	}
 
 	//Creacion Dueño @Jhon Riaño
@@ -41,11 +41,11 @@ public class Veterinaria {
 		}
 	}
 	//Crear Veterinario @Jhon Riaño
-	public void Crearveterinario(Doctor v)
+	public void Crearveterinario(Veterinario v)
 	{
-		for(int i=0;i<doctor.length;i++) {
-			if(doctor[i]==null) {
-				doctor[i]=v;
+		for(int i=0;i<Veterinario.length;i++) {
+			if(Veterinario[i]==null) {
+				Veterinario[i]=v;
 			}
 		}
 	}

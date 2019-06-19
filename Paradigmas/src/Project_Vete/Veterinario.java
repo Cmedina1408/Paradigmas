@@ -14,7 +14,7 @@ public class Veterinario extends Persona{
 		this.Especializacion = Especializacion;
 		
 	}
-
+	
 	public String get_Profesion() {
 		return "Profesion: " + Profesion;
 	}
