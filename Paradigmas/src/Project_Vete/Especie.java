@@ -2,7 +2,7 @@ package Project_Vete;
 
 /**
 *Esta clase define objetos Especie con gets,Set y Contructor  correspondientes
-* @author Jhon H Riaño
+* @author Jhon H Riaï¿½o
 */
 
 public class Especie {
@@ -16,6 +16,7 @@ public class Especie {
         this.especie = especie;
     }
 
+ 
     public String toString() {
         return "Especie{" + "especie=" + especie + '}';
     }

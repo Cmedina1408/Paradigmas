@@ -1,116 +1,105 @@
 package Project_Vete;
 
 
-import java.util.*;
+import java.io.*;
+import java.util.Date;
+import javax.swing.*;
 
 /**
 *Esta clase define objetos Mascota con gets,Set y Contructor  correspondientes
-* @author Jhon H Riaño
+* @author Jhon H Riano
 */
-public class Mascota {
-    
-	/**
-	*Esta clase define objetos Definicion de variables segun diagrama de clases Uml correspondientes
-	* @author Jhon H Riaño
-	*/
-	
-    private int numregistroMas;
-    private String nombreMas;
-    private int edadMas;
-    private String GeneroMas;
-    private Date fechanaciMas;
-    private String especie;
-	private  ArrayList<String> nombreDueno = new ArrayList<String>(); //Array para guardar los nombres de los dueños
-   	private  ArrayList<Date> fechaTrasp = new ArrayList<Date>(); //Array para guardar la fecha de los traspasos
 
-    public Mascota(int numregistroMas, 
-    		String nombreMas, 
-    		int edadMas, 
-    		String GeneroMas, 
-    		Date fechanaciMas, 
-    		String especie) {
-        this.numregistroMas = numregistroMas;
-        this.nombreMas = nombreMas;
-        this.edadMas = edadMas;
-        this.GeneroMas = GeneroMas;
-        this.fechanaciMas = fechanaciMas;
-        this.especie = especie;
-    }
-    
-    
-       
-    public int getNumregistroMas() {
-        return numregistroMas;
-    }
-
-    public void setNumregistroMas(int numregistroMas) {
-        this.numregistroMas = numregistroMas;
-    }
-
-    public String getNombreMas() {
-        return nombreMas;
-    }
-
-    public void setNombreMas(String nombreMas) {
-        this.nombreMas = nombreMas;
-    }
-
-    public int getEdadMas() {
-        return edadMas;
-    }
-
-    public void setEdadMas(int edadMas) {
-        this.edadMas = edadMas;
-    }
-
-    public String getGeneroMas() {
-        return GeneroMas;
-    }
-
-    public void setGeneroMas(String GeneroMas) {
-        this.GeneroMas = GeneroMas;
-    }
-
-    public Date getFechanaciMas() {
-        return fechanaciMas;
-    }
-
-    public void setFechanaciMas(Date fechanaciMas) {
-        this.fechanaciMas = fechanaciMas;
-    }
-
-    public String getEspecie() {
-        return especie;
-    }
-
-    public void setEspecie(String especie) {
-        this.especie = especie;
-    }
-    
-   
-    /**
-     * Guarda el registro del dueño y la fecha en la cual se realizo el traspaso
-     * @author WILSON GUTIERREZ LANCHEROS
-     * @param nm nombre del dueño de la mascota
-     */
-  
-     public void guardarDuenoMascota (String nm)  {   	   
-	   nombreDueno.add(nm);   	     	   	   
-   } 
-
-   /**
-    * Guarda el registro de la fecha en la cual se realizo el traspaso
-    * @author WILSON GUTIERREZ LANCHEROS 
-    * @param fechaT fecha de traspaso
-    */
-  
-    public void guardarFechaT (Date fechaT)  {   	   
-	  fechaTrasp.add(fechaT);   	     	   	   
-  } 
-
-    
-    public String toString() {
-        return "Mascota{" + "numregistroMas=" + numregistroMas + ", nombreMas=" + nombreMas + ", edadMas=" + edadMas + ", GeneroMas=" + GeneroMas + ", fechanaciMas=" + fechanaciMas + ", especie=" + especie + '}';
-    }
+  //import java.io.Serializable;
+// import java.util.Date;
+// import javax.swing.*;
         
-}
+   	
+
+   	public class Mascota implements Serializable{
+   	     //AQUI DECLARAMOS LOS ATRIBUTOS O VARIABLES DE INSTANCIA
+   	 String codigo;
+   	 String sexo;//DIRECCION DEL PROPIETARIO
+   	  String servicio;
+   	 String n_mascota;//NOMBRE DE LA MASCOTA
+   	 double edad;//EDAD DE LA MASCOTA
+   	 String especie;//TIPO DE MASCOTA
+   	 Date consulta;//FECHA DE CONSULTA
+   	 Icon portada;//FOTO DE LA MASCOTA
+   	 String raza;
+   	 String contextura;
+   	 String estatura;
+   	 double peso;
+   	 String pelo;
+   	 String ojos;
+
+   	public Mascota(String CODIGO,String SERVICIO,Date CONSULTA,String MASCOTA,double EDAD,String SEXO,double PESO,
+   	        String ESPECIE,String RAZA,String ESTATURA,String CONTEXTURA,String OJOS,String PELO,Icon PORTA){
+
+
+   	this.n_mascota=MASCOTA;//ACTUALIZA EL NOMBRE DE LA MASCOTA
+   	this.servicio=SERVICIO;
+   	this.sexo=SEXO;//ACTUALIZA EL SEXO DE LA MASCOTA
+   	this.edad=EDAD;//ACTUALIZA LA EDAD DE LA MASCOTA
+   	this.peso=PESO;
+   	this.especie=ESPECIE;
+   	this.raza=RAZA;
+   	this.estatura=ESTATURA;
+   	this.contextura=CONTEXTURA;
+   	this.ojos=OJOS;
+   	this.pelo=PELO;
+   	this.portada=PORTA;//ACTUALIZA LA FOTO DE LA MASCOTA
+   	this.consulta=CONSULTA;
+   	this.codigo=CODIGO;
+   	}
+   	// creamos el contructor 
+
+   	    public String getServicio() { return servicio;}
+   	    public void setServicio(String servicio) { this.servicio = servicio;}
+
+   	    public String getCodigo()            {  return codigo; }
+   	    public void setCodigo(String codigo) { this.codigo = codigo;}
+
+   	    public String getN_mascota()               {return n_mascota;}
+   	    public void setN_mascota(String n_mascota) {this.n_mascota = n_mascota;}
+
+   	    public String getContextura()                 {return contextura;}
+   	    public void setContextura(String contextura) {this.contextura = contextura;}
+   	    
+   	    public Date getConsulta()                {return consulta;}
+   	    public void setConsulta(Date consulta) {this.consulta = consulta;}
+
+   	    public double getEdad()          {return edad;}
+   	    public void setEdad(double edad) {this.edad = edad;}
+
+   	    public String getEspecie()             {return especie;}
+   	    public void setEspecie(String especie) {this.especie = especie;}
+
+   	    public String getEstatura()              {return estatura;}
+   	    public void setEstatura(String estatura) {this.estatura = estatura;}
+   	    
+   	    public String getOjos()          {return ojos;}
+   	    public void setOjos(String ojos) {this.ojos = ojos;}
+   	    
+   	    public String getPelo()          {return pelo;}
+   	    public void setPelo(String pelo) {this.pelo = pelo;}
+
+   	    public double getPeso()          {return peso;}
+   	    public void setPeso(double peso) {this.peso = peso; }
+
+   	    public Icon getPortada() {return portada;}
+   	    public void setPortada(Icon portada) {this.portada = portada; }
+
+   	    public String getRaza()          { return raza;}
+   	    public void setRaza(String raza) {this.raza = raza;}
+
+   	    public String getSexo()          { return sexo;}
+   	    public void setSexo(String sexo) { this.sexo = sexo;}
+   	    
+   	 
+   	}
+   	    
+   	    
+   	 
+
+        

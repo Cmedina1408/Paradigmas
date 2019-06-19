@@ -1,10 +1,6 @@
 package Project_Vete;
 
 
-
-import java.util.*;
-
-
 public class Persona {
     private int idPerson;
     private String nombrePerson;
