@@ -38,7 +38,7 @@ public class consulta_Medica{
 	}
 	/**
 	 * permite obtener el motivo de la consulta
-	 * @return
+	 * 
 	 */
 	
 	public String get_Motivo() 
