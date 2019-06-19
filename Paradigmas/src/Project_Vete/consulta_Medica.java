@@ -4,7 +4,11 @@ import java.util.*;
 
 /*
  * Esta clase me permite generar una consulta para el animal
+<<<<<<< HEAD
  * @author Daniel Manchola
+=======
+ * @author Jhon H Riaño
+>>>>>>> branch 'master' of https://github.com/damanchola1/Paradigmas.git
  */
 
 

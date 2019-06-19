@@ -2,18 +2,28 @@ package Project_Vete;
 
 public class Veterinaria {
 
-	// Definicion de arreglos @Jhon Riaño
+	/**
+	*Esta clase define  Definicion de arreglos  correspondientes
+	* @author Jhon H Riaño
+	*/
+
 	Dueño[] dueño;
 	Mascota[] mascota;
 	Veterinario[] Veterinario;
 
-	//Constructor @Jhon Riaño
+	/**
+	*Esta clase define Contructor  correspondientes
+	* @author Jhon H Riaño
+	*/
 	public Veterinaria(int cantdueños)
 	{
 		dueño=new Dueño[cantdueños];
 
 	}
-	//Constructor@Jhon Riaño
+	/**
+	*Esta clase define Contructor  correspondientes
+	* @author Jhon H Riaño
+	*/
 	public Veterinaria(Mascota[] mascota) {
 		this.mascota = mascota;
 	}
@@ -22,7 +32,11 @@ public class Veterinaria {
 		this.Veterinario = doctor;
 	}
 
-	//Creacion Dueño @Jhon Riaño
+	/**
+	*Esta clase define Creacion Dueño  correspondientes
+	* @author Jhon H Riaño
+	*/
+	
 	public void Creardueño(Dueño c)
 	{
 		for(int i=0;i<dueño.length;i++) {
@@ -31,7 +45,11 @@ public class Veterinaria {
 			}
 		}
 	}
-	//Crear mascota @Jhon Riaño
+	/**
+	*Esta clase define Crear mascota  correspondientes
+	* @author Jhon H Riaño
+	*/
+
 	public void Crearmascota(Mascota m)
 	{
 		for(int i=0;i<mascota.length;i++) {
@@ -40,8 +58,17 @@ public class Veterinaria {
 			}
 		}
 	}
+<<<<<<< HEAD
 	//Crear Veterinario @Jhon Riaño
 	public void Crearveterinario(Veterinario v)
+=======
+	/**
+	*Esta clase define Crear Veterinario  correspondientes
+	* @author Jhon H Riaño
+	*/
+	
+	public void Crearveterinario(Doctor v)
+>>>>>>> branch 'master' of https://github.com/damanchola1/Paradigmas.git
 	{
 		for(int i=0;i<Veterinario.length;i++) {
 			if(Veterinario[i]==null) {
