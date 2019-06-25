@@ -2,7 +2,7 @@ package Project_Vete;
 
 /**
 *Esta clase define objetos Especie con gets,Set y Contructor  correspondientes
-* @author Jhon H Riaï¿½o
+* @author Jhon H Riaño
 */
 
 public class Especie {

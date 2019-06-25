@@ -122,9 +122,8 @@ public class Veterinaria {
 	
 
 /**
- * @param Metodo para crear Veterinario
- * @author Jhon Riaño
- 
+ * @param Metodo para crear Veterinario.
+ * @author Jhon Riaño 
  */
 	
 	public void Crearveterinario1(Veterinario v)
