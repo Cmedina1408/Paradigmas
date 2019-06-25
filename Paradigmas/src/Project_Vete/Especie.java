@@ -1,7 +1,7 @@
 package Project_Vete;
 
 /**
-*Esta clase define objetos Especie con gets,Set y Contructor  correspondientes
+*Esta clase define objetos Especie con gets,Set y Contructor  correspondientes.
 * @author Jhon H Riaño.
 */
 
